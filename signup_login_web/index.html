@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Signup and Signin</title>
+      <link rel="stylesheet" href="./style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <!-- Sign In Form -->
+            <div id="signinMain">  
+                  <p class="signin">Sign-In Form</p>
+                  <div class="signinEmail">
+                     <input id="email2" type="text" placeholder="Email Address" maxlength="20" required>
+                  </div>
+                  <div class="signinPass">
+                     <input id="password2" type="password" placeholder="Password" maxlength="15" required>
+                  </div>
+                  <div class="forgotPass">
+                     <a href="" onClick="forgotPass()">Forgot password?</a>
+                  </div>
+                  <div class="signinBtn">
+                     <input id="input2Btn" type="submit" value="Sign In" onClick="signinRemoval()">
+                  </div>
+                  <div class="signUpLink">
+                     <p id="paraLink">Not a member?</p> 
+                     <a href="" id="signupClick">Signup now</a>
+                  </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signupMain">
+                  <p class="signup">Sign-Up Form</p>
+                  <div class="field">
+                     <input id="username" class="input1" type="text" placeholder="Username" maxlength="20" required>
+                  </div>
+                  <div class="field">
+                     <input id="email" class="input1" type="text" placeholder="Email Address" minlength="10" maxlength="20" required>
+                  </div>
+                  <div class="field">
+                     <input id="password" class="input1" type="password" placeholder="Password" maxlength="15" required>
+                  </div>
+                  <div class="field">
+                     <input id="confirmPassword" class="input1" type="password" placeholder="Confirm password" maxlength="15" crequired>
+                  </div>
+                  <div class="field">
+                     <input id="address" class="input1" type="text" placeholder="Address" maxlength="40" required>
+                  </div>
+                  <div class="field">
+                     <input id="dob" class="input1" type="date" placeholder="Date Of Birth" required>
+                  </div>
+                  <div>
+                     <input class="gender" type="radio" name="gender" value="male"><b>Male</b>
+                     <input class="gender" type="radio" name="gender" value="female"><b>Female</b>
+                     <input class="gender" type="radio" name="gender" value="other"><b>Other</b>
+                  </div>
+                  <div>
+                     <input id="picChoose" class="input1" type="file" name="profile">
+                  </div>
+                     <div class="field">
+                        <input id="number" class="input1" type="number" placeholder="Phone Number" max="12" min="8" required>
+                     </div>
+                     <div class="field">
+                        <input id="postalCode" class="input1" type="number" placeholder="Postal Code" max="6" min="3" required>
+                     </div>
+                  <div class="signupBtn">
+                     <input id="input2Btn" type="submit" value="Sign Up" onClick="signupRemoval()">
+                  </div>
+                  <div>
+                     <a href="#" id="signinClick" onClick="directSignin()">Signin now</a>
+                  </div>
+            </div>
+
+            <!-- Profile dashboard -->
+            <div id="main">
+               <div id="container">
+                  <!-- <img class="profileImg" src="./assets/profilefinal.jpg" alt="Profile Image">-->
+                  <!-- <p id="name"></p>  -->
+                  <button id="dashboardBtn" onClick="assignmentLinks()">Dashboard</button>
+                  <button id="logoutBtn" onClick="againSignIn()">Log Out</button>
+                  <button id="userBtn" onClick="viewProfile()">Profile</button>
+               </div>
+               <div id="container2">
+                  <div id="post1">
+                     <p id="description">Click here to view attached files. Thank You!</p>
+                     <a href="https://github.com/MuhammadMudabbirMunaf/JS_Objects_3Assignments" id="link1">https://github.com/MuhammadMudabbirMunaf/JS_Objects_3Assignments</a>
+                     <!-- <p id="p1"><b>Usama Ali</b> updated his profile image.</p>
+                     <img id="profileImg2" src="./assets/profilefinal.jpg" alt="profile">
+                     <img id="postImg1" src="./assets/post1.jpg" alt="post pic"> -->
+                  </div>
+                   <div id="post2">
+                     <p id="description">Click here to view attached files. Thank You!</p>
+                     <a href="https://github.com/MuhammadMudabbirMunaf/JS_Objects_3Assignments" id="link1">https://github.com/MuhammadMudabbirMunaf/JS_Objects_3Assignments</a>
+                     <!-- <p id="p2"><b>Usama Ali</b> updated his profile image.</p>
+                     <img id="profileImg3" src="./assets/profilefinal.jpg" alt="profile">
+                     <img id="postImg2" src="./assets/post2.jpg" alt="post pic"> -->
+                  </div> 
+                   <div id="post3">
+                     <p id="description">Click here to view attached files. Thank You!</p>
+                     <a href="https://github.com/MuhammadMudabbirMunaf/JS_Objects_3Assignments" id="link1">https://github.com/MuhammadMudabbirMunaf/JS_Objects_3Assignments</a>
+                     <!--<p id="p3"><b>Usama Ali</b> updated his cover image.</p>
+                     <img id="profileImg4" src="./profilefinal.jpg" alt="profile">
+                     <img id="postImg3" src="./post3.jpg" alt="post pic"> -->
+                  </div> 
+               </div>
+            </div>
+      <script src="./app.js"></script>
+   </body>
+</html>
